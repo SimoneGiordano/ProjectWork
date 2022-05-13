@@ -1,0 +1,91 @@
+@media (min-width: 1024px) {
+    .intro {
+        min-height: 685px;
+        position: relative;
+    }
+    .icon {
+        display: flex;
+    }
+    .icon b:not(.view) {
+        display: block;
+        padding: 20px;
+        color: black;
+    }
+    .icon img {
+        display: none;
+    }
+    .cta {
+        width: 33.25%;
+		position: absolute;
+		left: 2.5%;
+		bottom: 0;
+		text-align: left;
+    }
+    .cta a {
+        justify-content: left;
+    }
+    .cta h2{
+        margin-bottom: 64px;
+    }
+    .cta p:not(.overline) {
+        display: block;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 800px;   
+    }
+    .form-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .form-footer{
+        margin: 80px 80px;   
+    }
+    #email {
+        width: 90%;
+    }
+    .form-footer h2 {
+        font-size: 30px;
+    }
+    .social-network, .follow{
+        justify-content: initial;
+        padding: 0 1%;
+    
+    }
+    .social-network a {
+        padding: 10%;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+    }
+    .privacy-policy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .privacy-policy p {
+       padding: 0 10px;
+    }
+    .container-form {
+        padding: 7%;
+    }
+        @supports( backdrop-filter: blur(12.1px) ) {
+            .cta {
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.7);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(12.1px);
+                --webkit-backdrop-filter: blur(12.1px);
+            }
+        }   
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        overflow: hidden;
+    }
+    
+}
