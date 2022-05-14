@@ -13,6 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
 }
 .scount {
     background-color: black;
@@ -294,3 +295,4 @@ header {
 .privacy-policy p{
    padding-bottom: 14px;
 }
+/* fine index.html */
