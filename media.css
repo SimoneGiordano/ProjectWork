@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     .intro {
         min-height: 685px;
         position: relative;
@@ -51,7 +51,6 @@
     .social-network, .follow{
         justify-content: initial;
         padding: 0 1%;
-    
     }
     .social-network a {
         padding: 10%;
@@ -79,8 +78,8 @@
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(12.1px);
                 --webkit-backdrop-filter: blur(12.1px);
-            }
-        }   
+        }
+    }   
 }
 
 @media screen and (max-width: 767px){
