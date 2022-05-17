@@ -10,8 +10,10 @@
 
 
     <!-- ============== Stylesheet Links =============== -->
-    <link rel="stylesheet" href="media.css">
+  
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+ 
 
 </head>
 
@@ -19,17 +21,16 @@
 <body>
 
     <!-- ============= Shell Part HTML Start =====================-->
-    <scount>
-        <div class="scount">
-            <p> Sign up to our newsletter and get 10% discount
-                <button><svg class="close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </p>
+
+        <button class="btn" onclick="myFunction()"><svg class="close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+        <div>
+            <p id="close" class="scount"> Sign up to our newsletter and get 10% discount</p>
         </div>
-    </scount>
+
     <!-- ============= Shell Part HTML End =====================-->
 
     <!-- ============= Header Part HTML Start =====================-->
@@ -46,8 +47,6 @@
         </nav>
         <div class="logo-container">
             <img src="./images/logobrand.png" alt="logobrand">
-        </div>
-        <div>
         </div>
     </header>
     <!-- ============= Header Part HTML End =====================-->
@@ -75,7 +74,7 @@
         <div class="card">
             <div class="card-header" style="background-image: url('./images/fragole_panna.webp');"></div>
             <div class="card-text">
-                <p class="overline">Lorem ipsum</p>
+                <b class="overline">Lorem ipsum</b>
                 <h2>Title editorial</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> <br> Reprehenderit tenetur accusantium
                     distinctio quod officiis laborum laudantium mollitia veritatis totam iste iusto, repellendus illum
@@ -90,7 +89,7 @@
         <div class="card card--reverse">
             <div class="card-header" style="background-image: url('./images/fragole_panna.webp');"></div>
             <div class="card-text card-text--reverse">
-                <p class="overline">Lorem ipsum</p>
+                <b class="overline">Lorem ipsum</b>
                 <h2>Title editorial</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> <br> Reprehenderit tenetur accusantium
                     distinctio quod officiis laborum laudantium mollitia veritatis totam iste iusto, repellendus illum
@@ -155,9 +154,10 @@
                 <h2>
                     Keep you informed about news, trends, and special offers.
                 </h2>
-                <input type="text" id="email" placeholder="Insert your email and get -5% discount">
+                
                 <!--sostituire "a" con "button" e relative classi-->
                 <div class="send">
+                    <input type="text" id="email" placeholder="Insert your email and get -5% discount">
                     <a href="#">send<svg class="arrow" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -171,35 +171,50 @@
                     more
                     information here: <a href="#">Data privacy.</a></p>
             </form>
+                <button class="accordion">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 22C13.7246 22 15.387 21.562 16.8595 20.7418L21.0947 21.0947L20.7418 16.8595C21.562 15.387 22 13.7246 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM16.115 18.8621L16.3916 18.6958L18.9053 18.9053L18.6958 16.3916L18.8621 16.115C19.603 14.8824 20 13.4715 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C13.4715 20 14.8824 19.603 16.115 18.8621ZM12.0003 16.998C12.5528 16.998 13.0007 16.5503 13.0007 15.998C13.0007 15.4458 12.5528 14.998 12.0003 14.998C11.4479 14.998 11 15.4458 11 15.998C11 16.5503 11.4479 16.998 12.0003 16.998ZM11 14H13V13C13 13.0024 13.0047 12.9972 13.0154 12.9854C13.0417 12.9565 13.1039 12.888 13.2205 12.7955C13.3207 12.716 13.3517 12.6954 13.6048 12.535C14.4661 11.989 15 11.0396 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10H11C11 9.44772 11.4477 9 12 9C12.5523 9 13 9.44772 13 10C13 10.3473 12.8225 10.6629 12.534 10.8458C12.2102 11.0511 12.1564 11.0867 11.9775 11.2286C11.3827 11.7005 11 12.2627 11 13V14Z"
+                            fill="black" />
+                    </svg>
+                    May we help you?
+                </button>
+                <div class="panel">
+                    <h2 class="overline">
+                        <svg class="help" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 22C13.7246 22 15.387 21.562 16.8595 20.7418L21.0947 21.0947L20.7418 16.8595C21.562 15.387 22 13.7246 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM16.115 18.8621L16.3916 18.6958L18.9053 18.9053L18.6958 16.3916L18.8621 16.115C19.603 14.8824 20 13.4715 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C13.4715 20 14.8824 19.603 16.115 18.8621ZM12.0003 16.998C12.5528 16.998 13.0007 16.5503 13.0007 15.998C13.0007 15.4458 12.5528 14.998 12.0003 14.998C11.4479 14.998 11 15.4458 11 15.998C11 16.5503 11.4479 16.998 12.0003 16.998ZM11 14H13V13C13 13.0024 13.0047 12.9972 13.0154 12.9854C13.0417 12.9565 13.1039 12.888 13.2205 12.7955C13.3207 12.716 13.3517 12.6954 13.6048 12.535C14.4661 11.989 15 11.0396 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10H11C11 9.44772 11.4477 9 12 9C12.5523 9 13 9.44772 13 10C13 10.3473 12.8225 10.6629 12.534 10.8458C12.2102 11.0511 12.1564 11.0867 11.9775 11.2286C11.3827 11.7005 11 12.2627 11 13V14Z"
+                                fill="black" />
+                        </svg>
+                        May we help you?</h2>
+                    <ul>
+                        <li><a href="#">Find my order</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Product care</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
 
-            <button class="accordion">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12 22C13.7246 22 15.387 21.562 16.8595 20.7418L21.0947 21.0947L20.7418 16.8595C21.562 15.387 22 13.7246 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM16.115 18.8621L16.3916 18.6958L18.9053 18.9053L18.6958 16.3916L18.8621 16.115C19.603 14.8824 20 13.4715 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C13.4715 20 14.8824 19.603 16.115 18.8621ZM12.0003 16.998C12.5528 16.998 13.0007 16.5503 13.0007 15.998C13.0007 15.4458 12.5528 14.998 12.0003 14.998C11.4479 14.998 11 15.4458 11 15.998C11 16.5503 11.4479 16.998 12.0003 16.998ZM11 14H13V13C13 13.0024 13.0047 12.9972 13.0154 12.9854C13.0417 12.9565 13.1039 12.888 13.2205 12.7955C13.3207 12.716 13.3517 12.6954 13.6048 12.535C14.4661 11.989 15 11.0396 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10H11C11 9.44772 11.4477 9 12 9C12.5523 9 13 9.44772 13 10C13 10.3473 12.8225 10.6629 12.534 10.8458C12.2102 11.0511 12.1564 11.0867 11.9775 11.2286C11.3827 11.7005 11 12.2627 11 13V14Z"
-                        fill="black" />
-                </svg>
-                May we help you?
-            </button>
-            <div class="service">
-                <ul>
-                    <li><a href="#">Find my order</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Product care</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Payment</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </div>
-
-            <button class="accordion">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM11.998 21C16.9686 21 20.998 16.9706 20.998 12C20.998 7.02944 16.9686 3 11.998 3C7.02748 3 2.99805 7.02944 2.99805 12C2.99805 16.9706 7.02748 21 11.998 21ZM13.176 8.16023H11V6.24023H13.176V8.16023ZM13.176 18.0002H11V9.36023H13.176V18.0002Z"
-                        fill="black" />
-                </svg>
-                Company
-            </button>
-            <div class="service">
+                <button class="accordion">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM11.998 21C16.9686 21 20.998 16.9706 20.998 12C20.998 7.02944 16.9686 3 11.998 3C7.02748 3 2.99805 7.02944 2.99805 12C2.99805 16.9706 7.02748 21 11.998 21ZM13.176 8.16023H11V6.24023H13.176V8.16023ZM13.176 18.0002H11V9.36023H13.176V18.0002Z"
+                            fill="black" />
+                    </svg>
+                    Company
+                </button>
+                <div class="panel">
+                   
+                <h2 class="overline">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM11.998 21C16.9686 21 20.998 16.9706 20.998 12C20.998 7.02944 16.9686 3 11.998 3C7.02748 3 2.99805 7.02944 2.99805 12C2.99805 16.9706 7.02748 21 11.998 21ZM13.176 8.16023H11V6.24023H13.176V8.16023ZM13.176 18.0002H11V9.36023H13.176V18.0002Z"
+                            fill="black" />
+                    </svg>
+                    Company</h2>
+                
                 <ul>
                     <li><a href="#">#DiscoverBrandName</a></li>
                     <li><a href="#">Catalogs</a></li>
@@ -208,7 +223,8 @@
                     <li><a href="#">Arcturus Group</a></li>
                     <li><a href="#">Work with us</a></li>
                 </ul>
-            </div>
+                </div>
+                       
         </div>
         <!-- ============= Form Part HTML End =====================-->
         <!-- ============= Social Part HTML Start =====================-->
@@ -259,8 +275,7 @@
 
     <!-- ============= Terms Part HTML Start =====================-->
     <terms>
-        <div class="copyright" style="background-color: black; min-height: 110px;">
-            
+        <div class="copyright" style="background-color: black; min-height: 110px;">  
             <span class="privacy-policy">
                 <p>© 2021 Arcturus Brand Name S.p.A. All rights reserved</p>
                 <a href="">
@@ -276,25 +291,6 @@
         </div>
     </terms>
     <!-- ============= Terms Part HTML Start =====================-->
-    <!-- ============== Javascript =============== -->
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-
-
 </body>
-
+<script type="text/javascript" src="script.js"></script>
 </html>

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .intro {
         min-height: 685px;
         position: relative;
@@ -6,7 +6,7 @@
     .icon {
         display: flex;
     }
-    .icon b:not(.view) {
+    .icon b.not-view:not(.view) {
         display: block;
         padding: 20px;
         color: black;
@@ -25,26 +25,26 @@
         justify-content: left;
     }
     .cta h2{
-        margin-bottom: 64px;
+        margin-bottom: 15%;
     }
-    .cta p:not(.overline) {
+    .cta p:not(.overline){
         display: block;
+        padding-bottom: 12%;
     }
     .card {
         display: grid;
         grid-template-columns: 1fr 1fr;
         min-height: 800px;   
     }
+    .card-text p {
+        padding-bottom: 10%;
+    }
     .form-footer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 25% 25%;
+        justify-items: center;
     }
-    .form-footer{
-        margin: 80px 80px;   
-    }
-    #email {
-        width: 90%;
-    }
+   
     .form-footer h2 {
         font-size: 30px;
     }
@@ -71,20 +71,51 @@
     .container-form {
         padding: 7%;
     }
-        @supports( backdrop-filter: blur(12.1px) ) {
-            .cta {
+    .send {
+        display: flex;
+        align-items: center;
+    }
+    .send a {
+        margin-left: 3%;
+    }
+    .accordion {
+        display: none;
+    }
+    .panel {
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+    }
+    .panel .help {
+        position: absolute;
+        left: -25%;
+    }
+    .panel svg {
+        position: absolute;
+        left: -25%;
+    }
+    .panel h2 {
+        display: flex;
+        align-items: center;
+        font: bold 16px 'Roboto', sans-serif;
+        position: relative;
+    }
+    .panel ul li {
+        padding-top: 16px;
+        margin: 0;
+    }
+    .title p {
+        text-align: center;
+    }
+        @supports (backdrop-filter: blur(12.1px)) {
+            .intro .cta {
                 /* From https://css.glass */
-                background: rgba(255, 255, 255, 0.7);
+                background: rgba(255, 255, 255, 0.75);
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(12.1px);
-                --webkit-backdrop-filter: blur(12.1px);
+                -webkit-backdrop-filter: blur(12.1px);
         }
-    }   
-}
-
-@media screen and (max-width: 767px){
-    .container{
-        overflow: hidden;
-    }
-    
+    } 
 }
