@@ -1,8 +1,14 @@
-.title {
-    
-    p{
-        font: 36px 'Roboto', sans-serif;
-        font-weight: 400;
-        padding: 24px;
-    }
+$primary-color: #0000;
+$secondary-color: white;
+$offwhite-color: #F5F5F5;
+$lightgrey-color: #DADADA;
+$grey-color: #9D9D9D;
+$darkgrey-color: #6B6B6B;
+
+body {
+    background-color: $offwhite-color;
 }
+@import "_title&subtitle.scss";
+@import "_card.scss";
+@import "imgheader.scss";
+@import "_scss.scss"

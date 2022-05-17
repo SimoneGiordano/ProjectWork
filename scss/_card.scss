@@ -1,0 +1,57 @@
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.price {
+    display: flex;
+    background-color: white;
+    height: 40px;
+    margin: 0 auto;
+    width: 90%;
+    
+    button {
+
+        border: none;
+        background-color: transparent;
+    }
+    b{
+
+        font: 16px 'Roboto' bold , sans-serif;
+    }
+    .lowercase{
+
+        font: 12px 'Roboto' bold, sans-serif;
+    }
+}
+
+.product-text {
+    background-color: $secondary-color;
+}
+.card-media{
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+    .heart {
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        border: none;
+        background-color: transparent;
+    }
+    .x6{
+        background-color: white;
+        position: absolute;
+        left: 3.5%;
+        bottom: 16.5%;
+        padding: 0 8px;
+    }
+    .new{
+        background-color: white;
+        position: absolute;
+        left: 3.5%;
+        top: 3%;
+        padding: 0 8px;
+    }
+}

@@ -1,6 +1,98 @@
+body {
+  background-color: #F5F5F5;
+}
+
 .title p {
   font: 36px 'Roboto', sans-serif;
   font-weight: 400;
-  padding: 24px;
+  padding: 3%;
+  background-color: white;
+}
+
+.results p {
+  background-color: #F5F5F5;
+  font: 14px 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 3.5%;
+  color: #6B6B6B;
+}
+
+@media only screen and (min-width: 1024px) {
+  .title p {
+    text-align: center;
+  }
+}
+
+.product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  height: 40px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.price button {
+  border: none;
+  background-color: transparent;
+}
+
+.price b {
+  font: 16px 'Roboto' bold , sans-serif;
+}
+
+.price .lowercase {
+  font: 12px 'Roboto' bold, sans-serif;
+}
+
+.product-text {
+  background-color: white;
+}
+
+.card-media {
+  position: relative;
+}
+
+.card-media img {
+  width: 100%;
+}
+
+.card-media .heart {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  border: none;
+  background-color: transparent;
+}
+
+.card-media .x6 {
+  background-color: white;
+  position: absolute;
+  left: 3.5%;
+  bottom: 16.5%;
+  padding: 0 8px;
+}
+
+.card-media .new {
+  background-color: white;
+  position: absolute;
+  left: 3.5%;
+  top: 3%;
+  padding: 0 8px;
+}
+
+@media screen and (min-width: 1440px) {
+  .logo-container {
+    position: absolute;
+    left: 47.5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
