@@ -109,6 +109,11 @@
     .title p {
         text-align: center;
     }
+    .results p {
+        text-align: right;
+    }
+    
+
         @supports (backdrop-filter: blur(12.1px)) {
             .intro .cta {
                 /* From https://css.glass */

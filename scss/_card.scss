@@ -1,57 +1,125 @@
+h3 {
+    font-size: 14px;
+}
 .product {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 2px;
 }
-.price {
-    display: flex;
-    background-color: white;
-    height: 40px;
-    margin: 0 auto;
-    width: 90%;
+
+.card-product {
+    width: 100%;
+    max-width: 398px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    box-sizing: unset;
+    position: relative;
+    b {
+        position: absolute;
+        top: 3%;
+        left: 6%;
+        background-color: $secondary-color;
+        padding: 1px 15px;
+    }
+    p{
+        position: absolute;
+        bottom: 36.5%;
+        left: 6%;
+        background-color: $secondary-color;
+        padding: 1px 15px;
+        font-weight: bold;
+    }
+
+    h2 {
+        padding-bottom: 6.5%;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        padding: 35px 16px;
+        overflow: hidden;
+    }
     
     button {
-
+        position: absolute;
+        top: 3%;
+        right: 12%;
         border: none;
-        background-color: transparent;
-    }
-    b{
-
-        font: 16px 'Roboto' bold , sans-serif;
-    }
-    .lowercase{
-
-        font: 12px 'Roboto' bold, sans-serif;
+        cursor: pointer;
+        background: transparent;
     }
 }
 
-.product-text {
-    background-color: $secondary-color;
-}
-.card-media{
+.price-product {
     position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondary-color;
+    height: 40px;
+    padding: 10px;
 
-    img {
-        width: 100%;
+    span {
+        display: flex;
+        align-items: center;
     }
-    .heart {
-        position: absolute;
-        right: 5%;
-        top: 3%;
+
+    s {
+        font: 12px 'Roboto', sans-serif;
+        margin-left: 8px;
+    }
+
+    button {
+        background: none;
         border: none;
-        background-color: transparent;
     }
-    .x6{
-        background-color: white;
+    button svg {
         position: absolute;
-        left: 3.5%;
-        bottom: 16.5%;
-        padding: 0 8px;
+        right: 20px;
+        top: 20px;
     }
-    .new{
-        background-color: white;
-        position: absolute;
-        left: 3.5%;
-        top: 3%;
-        padding: 0 8px;
+
+    .price-product p {
+        font: 16px 'Roboto', sans-serif;
+        text-decoration: line-through;
+        margin-left: 8px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .product {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .product.product-6-col{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .product.product-6-col .card-product div {
+        display: none;
+    }
+    .product.product-6-col .card-product b{
+        display: none;
+    }
+    .product.product-6-col .card-product p {
+        display: none;
+    }
+    .product.product-6-col .card-product button {
+        display: none;
+    }
+    .btn--4 path {
+        fill: $grey-color
+    }
+    .btn--6 path {
+        fill: $grey-color
+    }
+    .btn--active path {
+        fill: $primary-color;
     }
 }

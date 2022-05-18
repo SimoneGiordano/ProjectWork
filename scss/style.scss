@@ -1,4 +1,4 @@
-$primary-color: #0000;
+$primary-color: black;
 $secondary-color: white;
 $offwhite-color: #F5F5F5;
 $lightgrey-color: #DADADA;
@@ -10,5 +10,5 @@ body {
 }
 @import "_title&subtitle.scss";
 @import "_card.scss";
-@import "imgheader.scss";
-@import "_scss.scss"
+@import "_imgheader.scss";
+@import "_products.scss";

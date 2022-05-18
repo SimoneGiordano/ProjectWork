@@ -1,0 +1,20 @@
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    a {
+        text-decoration: none;
+        color: $primary-color;
+    }
+    li {
+        display: inline;
+        font-size: 18px;
+      }
+      li+li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+      }
+  }
+.results svg {
+    display: block;
+}

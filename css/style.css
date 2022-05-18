@@ -9,11 +9,28 @@ body {
   background-color: white;
 }
 
-.results p {
+.results {
   background-color: #F5F5F5;
+  padding: 3.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.results button {
+  display: none;
+}
+
+.results svg {
+  display: none;
+}
+
+.results span {
   font: 14px 'Roboto', sans-serif;
   font-weight: 400;
-  padding: 3.5%;
   color: #6B6B6B;
 }
 
@@ -21,6 +38,23 @@ body {
   .title p {
     text-align: center;
   }
+  .results span {
+    position: absolute;
+    right: 6%;
+  }
+  .results button {
+    display: inline;
+    border: none;
+    background-color: transparent;
+  }
+  .results svg {
+    display: inline;
+    padding-left: 10px;
+  }
+}
+
+h3 {
+  font-size: 14px;
 }
 
 .product {
@@ -28,65 +62,154 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
 }
 
-.price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  height: 40px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.price button {
-  border: none;
-  background-color: transparent;
-}
-
-.price b {
-  font: 16px 'Roboto' bold , sans-serif;
-}
-
-.price .lowercase {
-  font: 12px 'Roboto' bold, sans-serif;
-}
-
-.product-text {
-  background-color: white;
-}
-
-.card-media {
+.card-product {
+  width: 100%;
+  max-width: 398px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
   position: relative;
 }
 
-.card-media img {
+.card-product b {
+  position: absolute;
+  top: 3%;
+  left: 6%;
+  background-color: white;
+  padding: 1px 15px;
+}
+
+.card-product p {
+  position: absolute;
+  bottom: 36.5%;
+  left: 6%;
+  background-color: white;
+  padding: 1px 15px;
+  font-weight: bold;
+}
+
+.card-product h2 {
+  padding-bottom: 6.5%;
+}
+
+.card-product img {
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.card-media .heart {
+.card-product div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  padding: 35px 16px;
+  overflow: hidden;
+}
+
+.card-product button {
   position: absolute;
-  right: 5%;
   top: 3%;
+  right: 12%;
   border: none;
-  background-color: transparent;
+  cursor: pointer;
+  background: transparent;
 }
 
-.card-media .x6 {
+.price-product {
+  position: relative;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
-  position: absolute;
-  left: 3.5%;
-  bottom: 16.5%;
-  padding: 0 8px;
+  height: 40px;
+  padding: 10px;
 }
 
-.card-media .new {
-  background-color: white;
+.price-product span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-product s {
+  font: 12px 'Roboto', sans-serif;
+  margin-left: 8px;
+}
+
+.price-product button {
+  background: none;
+  border: none;
+}
+
+.price-product button svg {
   position: absolute;
-  left: 3.5%;
-  top: 3%;
-  padding: 0 8px;
+  right: 20px;
+  top: 20px;
+}
+
+.price-product .price-product p {
+  font: 16px 'Roboto', sans-serif;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .product {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .product.product-6-col {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+  .product.product-6-col .card-product div {
+    display: none;
+  }
+  .product.product-6-col .card-product b {
+    display: none;
+  }
+  .product.product-6-col .card-product p {
+    display: none;
+  }
+  .product.product-6-col .card-product button {
+    display: none;
+  }
+  .btn--4 path {
+    fill: #9D9D9D;
+  }
+  .btn--6 path {
+    fill: #9D9D9D;
+  }
+  .btn--active path {
+    fill: black;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -94,5 +217,30 @@ body {
     position: absolute;
     left: 47.5%;
   }
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+ul.breadcrumb a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+.results svg {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

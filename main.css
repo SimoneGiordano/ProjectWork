@@ -31,7 +31,7 @@ header {
     right: 2.5%;
     top: 0.5%;
     border: none;
-    background-color: black;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -318,4 +318,3 @@ header {
     color: black;
     font: 16px 'Roboto', sans-serif;
 }
-/* fine index.html */

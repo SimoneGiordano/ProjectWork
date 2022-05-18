@@ -8,13 +8,21 @@
     }
 }
 .results {
-    
-    p{
-        background-color: $offwhite-color;
+    background-color: $offwhite-color;
+    padding: 3.5%;
+    display: flex;
+    align-items: center;
+    button {
+        display: none;
+    }
+    svg {
+        display: none;
+    }
+    span{
         font: 14px 'Roboto', sans-serif;
         font-weight: 400;
-        padding: 3.5%;
         color: $darkgrey-color;
+   
     }
 }
 
@@ -24,5 +32,21 @@
         p{
             text-align: center;
         }
+    }
+    .results {
+        span {
+            position: absolute;
+            right: 6%;
+        }
+        button {
+            display: inline;
+            border: none;
+            background-color: transparent;
+        }
+        svg{
+            display: inline;
+            padding-left: 10px;
+        }
+        
     }
 }
