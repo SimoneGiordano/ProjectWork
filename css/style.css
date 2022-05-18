@@ -22,6 +22,7 @@ body {
 
 .results button {
   display: none;
+  cursor: pointer;
 }
 
 .results svg {
@@ -242,5 +243,94 @@ ul.breadcrumb li + li:before {
 
 .results svg {
   display: block;
+}
+
+.gallery {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (80vw)[10];
+      grid-template-columns: repeat(10, 80vw);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  overflow: scroll;
+  overflow-y: hidden;
+  height: 90vh;
+  -ms-scroll-snap-type: both mandatory;
+      scroll-snap-type: both mandatory;
+  scroll-padding: 1rem;
+}
+
+.gallery .active {
+  -ms-scroll-snap-type: unset;
+      scroll-snap-type: unset;
+}
+
+.gallery img {
+  scroll-snap-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 0;
+  width: 100%;
+}
+
+.details-product {
+  display: none;
+}
+
+.info {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.active, .info:hover {
+  background-color: #ccc;
+}
+
+.info:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+@media only screen and (min-width: 1024px) {
+  .product-place-mobile {
+    display: none;
+  }
+  .carousel {
+    display: none;
+  }
+  .details-product {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0fr 1fr;
+        grid-template-columns: 0fr 1fr;
+  }
+  img {
+    max-width: 531px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .info.active .panel {
+    max-height: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

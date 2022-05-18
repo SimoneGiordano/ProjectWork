@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="media.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script type="text/javascript" src="view-product.js"></script>
+ 
 </head>
 
 <body>
@@ -843,23 +845,6 @@
         </div>
     </terms>
     <!-- ============= Terms Part HTML Start =====================-->
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
 </body>
 <script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" src="view-product.js"></script>
 </html>

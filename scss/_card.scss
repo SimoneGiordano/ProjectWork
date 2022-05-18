@@ -100,18 +100,18 @@ h3 {
     }
     .product.product-6-col{
         grid-template-columns: repeat(6, 1fr);
-    }
-    .product.product-6-col .card-product div {
-        display: none;
-    }
-    .product.product-6-col .card-product b{
-        display: none;
-    }
-    .product.product-6-col .card-product p {
-        display: none;
-    }
-    .product.product-6-col .card-product button {
-        display: none;
+        .card-product div {
+            display: none;
+        }
+        .card-product b{
+            display: none;
+        }
+        .card-product p {
+            display: none;
+        }
+        .card-product button {
+            display: none;
+        }
     }
     .btn--4 path {
         fill: $grey-color

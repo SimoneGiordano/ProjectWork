@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listing</title>
+    <title>Products</title>
 
     <!-- ============== Stylesheet Links =============== -->
     <link rel="stylesheet" href="main.css" type="text/css">
@@ -57,47 +57,68 @@
     </div>
     <!-- ============= Header Part HTML End =====================-->
 
-    <div class="product">
-        <div class="card-product" id="card-product-1">
-                <button  id="123" class="add-to-list">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1393 2.00002C14.8232 2 13.9749 2.17138 13.0024 2.69171C12.6424 2.88435 12.3046 3.11635 11.9909 3.38701C11.6893 3.13153 11.365 2.91018 11.0198 2.72357C10.0285 2.18759 9.13662 2 7.86777 2C4.46949 2 2 5.07786 2 9.07526C2 12.0941 3.53985 15.0102 6.40804 17.8301C7.91354 19.3102 9.83575 20.7749 11.2124 21.5542L12 22L12.7876 21.5542C14.1643 20.7749 16.0865 19.3102 17.592 17.8301C20.4602 15.0102 22 12.0941 22 9.07526C22 5.12017 19.5072 2.01526 16.1393 2.00002ZM20.182 9.0751C20.182 11.4402 18.8967 13.8743 16.3763 16.3522C15.0022 17.7031 13.2356 19.0532 12.0002 19.7615C10.7648 19.0532 8.99819 17.7031 7.62406 16.3522C5.10365 13.8743 3.81836 11.4402 3.81836 9.0751C3.81836 6.12156 5.53076 3.9873 7.86795 3.9873C8.8768 3.9873 9.49847 4.11807 10.2139 4.50488C10.6365 4.73337 11.0101 5.03507 11.3334 5.41209L12.0023 6.1921L12.6651 5.40591C12.9957 5.01378 13.3747 4.70521 13.8019 4.47664C14.4964 4.10506 15.0793 3.9873 16.1357 3.98731C18.444 3.99777 20.182 6.16255 20.182 9.0751Z" fill="black"/>
-                        </svg>
-                </button>
-                <button  id="123" class="remove-to-list">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0024 0.691711C11.9749 0.171383 12.8232 -1.52875e-06 14.1393 1.60009e-05C17.5072 0.0152621 20 3.12017 20 7.07526C20 10.0941 18.4602 13.0102 15.592 15.8301C14.0865 17.3102 12.1643 18.7749 10.7876 19.5542L10 20L9.21237 19.5542C7.83575 18.7749 5.91354 17.3102 4.40804 15.8301C1.53985 13.0102 0 10.0941 0 7.07526C0 3.07786 2.46949 0 5.86777 0C7.13662 0 8.02847 0.187592 9.01983 0.723571C9.36498 0.910178 9.68927 1.13153 9.99088 1.38701C10.3046 1.11635 10.6424 0.884353 11.0024 0.691711Z" fill="#CB0000"/>
-                        </svg>                        
-                </button>
-                
-            <a href="#">
-                <img src="./images/fragola-singola.webp" alt="productId">
-            </a>
-            <div>
-                <span>
-                    <h2>Product name</h2>
-                    <c>Description</c>
-                </span>
-                <section class="price-product">
-                    <span>
-                        <h3>$ 120,00</h3>
-                        <s>$ 240,00</s>
-                    </span>
-                    <button class="add-to-cart-product">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03319 4C5.32717 1.81519 7.51054 0 9.99959 0C12.4886 0 14.672 1.81519 14.966 4H17.8466C18.9511 4 19.8466 4.89543 19.8466 6C19.8466 6.09464 19.8399 6.18916 19.8265 6.28284L18.1122 18.2828C17.9714 19.2681 17.1276 20 16.1323 20H3.86688C2.87158 20 2.02774 19.2681 1.88699 18.2828L0.172699 6.28284C0.0164898 5.18937 0.776288 4.17631 1.86976 4.0201C1.96344 4.00672 2.05796 4 2.1526 4H5.03319ZM7.07227 4H12.928C12.624 2.93808 11.3982 2 10.0001 2C8.60211 2 7.37626 2.93808 7.07227 4ZM2.15234 6H4.99933V8H6.99933V6H12.9993V8H14.9993V6H17.8463L16.132 18H3.86663L2.15234 6Z" fill="black"/>
-                        </svg>
-                    </button>
-                </section> 
-            </div>                
+    <div class="carousel">
+        <ul class="gallery">
+            <img src="./images/fragola-singola.webp" alt="first-img-product">
+            <img src="./images/lewis-fagg-CE1yaljvkb0-unsplash.webp" alt="second-img-product">
+            <img src="./images/sahand-babali-YrlNLfGFhT0-unsplash.webp" alt="third-img-product">
+            <img src="./images/alexander-sergienko-VMMfXKElJdw-unsplash.webp" alt="fourth-img-product">
+        </ul>
+    </div>
+    <div class="details-product">
+        <img src="./images/fragola-singola.webp" alt="first-img-product">
+        <img src="./images/lewis-fagg-CE1yaljvkb0-unsplash.webp" alt="second-img-product">
+        <img src="./images/sahand-babali-YrlNLfGFhT0-unsplash.webp" alt="third-img-product">
+        <img src="./images/alexander-sergienko-VMMfXKElJdw-unsplash.webp" alt="fourth-img-product">
+    </div>
+    
+ 
+    <div> <!--new-->
+        <span>
+            <h2>Product name</h2>
+            <c>Description</c>
+        </span>
+        <section class="price-product">
+            <span>
+                <h3>$ 120,00</h3>
+                <s>$ 240,00</s>
+            </span>
+            <button class="add-to-cart-product">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03319 4C5.32717 1.81519 7.51054 0 9.99959 0C12.4886 0 14.672 1.81519 14.966 4H17.8466C18.9511 4 19.8466 4.89543 19.8466 6C19.8466 6.09464 19.8399 6.18916 19.8265 6.28284L18.1122 18.2828C17.9714 19.2681 17.1276 20 16.1323 20H3.86688C2.87158 20 2.02774 19.2681 1.88699 18.2828L0.172699 6.28284C0.0164898 5.18937 0.776288 4.17631 1.86976 4.0201C1.96344 4.00672 2.05796 4 2.1526 4H5.03319ZM7.07227 4H12.928C12.624 2.93808 11.3982 2 10.0001 2C8.60211 2 7.37626 2.93808 7.07227 4ZM2.15234 6H4.99933V8H6.99933V6H12.9993V8H14.9993V6H17.8463L16.132 18H3.86663L2.15234 6Z" fill="black"/>
+                </svg>
+            </button>
+        </section> 
+    </div> 
+
+        <button class="info">
+            Description
+        </button>
+        <div class="panel" style="overflow: hidden">
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia doloremque minima placeat fugit. Sapiente aliquam rem dolorum, consequatur dicta voluptatum aspernatur iusto soluta facilis quibusdam eos, quae enim animi exercitationem.</p>
         </div>
-    </div>    
 
-
-
-
-
-
+        <button class="info">
+            Details
+        </button>
+        <div class="panel" style="overflow: hidden">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia doloremque minima placeat fugit. Sapiente aliquam rem dolorum, consequatur dicta voluptatum aspernatur iusto soluta facilis quibusdam eos, quae enim animi exercitationem.</p>
+         </div>
+         <button class="info">
+            Tech Specs
+        </button>
+        <div class="panel" style="overflow: hidden">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia doloremque minima placeat fugit. Sapiente aliquam rem dolorum, consequatur dicta voluptatum aspernatur iusto soluta facilis quibusdam eos, quae enim animi exercitationem.</p>
+         </div>
+         <button class="info">
+            Care Information
+        </button>
+        <div class="panel" style="overflow: hidden">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia doloremque minima placeat fugit. Sapiente aliquam rem dolorum, consequatur dicta voluptatum aspernatur iusto soluta facilis quibusdam eos, quae enim animi exercitationem.</p>
+         </div>
+         
+ 
+ 
 
 
 
@@ -287,23 +308,8 @@
         </div>
     </terms>
     <!-- ============= Terms Part HTML Start =====================-->
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
 </body>
+<script type="text/javascript" src="accordion-product.js"></script>
 <script type="text/javascript" src="script.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </html>
